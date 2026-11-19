@@ -10,6 +10,7 @@ O Sistema anda permitindo mais processamentos simultanêos do que o limite estab
 
 # 2. Evidencia 1
 <img width="480" height="178" alt="711393139-92687f04-cdda-4cbf-a766-5c4d15101246" src="https://github.com/user-attachments/assets/e29b9799-4e0f-42f9-996e-b9bacfa92fef" />
+
 # Problema A
 <img width="470" height="174" alt="711391777-3716bc21-05ae-4b9a-801e-61669fe8f8cd" src="https://github.com/user-attachments/assets/5bd8b5f4-0af4-422f-bf86-6c54169d0875" />
 
