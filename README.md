@@ -4,24 +4,11 @@ Aluno: Gabriel Ribeiro de Oliveira
 Professora: Simone Tatiane do Canto
 Data: 18/11/2026
 
-## 1. Situação - problemas
 
-O Sistema anda permitindo mais processamentos simultanêos do que o limite estabelico, sendo assim o estoque da replica não esta sendo atualizado corretamente, então o servidor principal fica indisponivel e o sistema não consegue utilizar a replica.
-
-# 2. Evidencia 1
-<img width="480" height="178" alt="711393139-92687f04-cdda-4cbf-a766-5c4d15101246" src="https://github.com/user-attachments/assets/e29b9799-4e0f-42f9-996e-b9bacfa92fef" />
-
-# Problema A
-<img width="470" height="174" alt="711391777-3716bc21-05ae-4b9a-801e-61669fe8f8cd" src="https://github.com/user-attachments/assets/5bd8b5f4-0af4-422f-bf86-6c54169d0875" />
+=======================================================================================================================================
 
 
-#Controle de concorrencia MAXIMO_SIMULTANEO = 2 - foi alterado de numero 3 para 2
-
-
-
-EVIDENCIA 3:
-
-QUESTÕES:
+## QUESTÕES:
 
 
 1 - O semáforo controla o número de threads que podem ser executadas ao mesmo tempo, evitando que o sistema fique sobrecarregado.
@@ -39,4 +26,37 @@ Depois da atualização, a sincronização envia o novo valor do estoque para a 
 
 # Conclusão
 
-Com essa atividade, aprendi a interpretar o código, identificar e corrigir os problemas apresentados pela empresa e compreender melhor o funcionamento de uma réplica e como ela pode assumir o lugar do servidor principal caso ele apresente alguma falha.
+Com essa atividade, aprendi a interpretar o código, identificar e corrigir os problemas apresentados pela empresa e compreender melhor o funcionamento de uma réplica e como ela pode assumir o lugar do servidor 
+
+
+================================================================================================================================
+
+## 1. Situação - problemas
+
+O Sistema anda permitindo mais processamentos simultanêos do que o limite estabelico, sendo assim o estoque da replica não esta sendo atualizado corretamente, então o servidor principal fica indisponivel e o sistema não consegue utilizar a replica.
+
+# 2. Evidencia 1
+<img width="480" height="178" alt="711393139-92687f04-cdda-4cbf-a766-5c4d15101246" src="https://github.com/user-attachments/assets/e29b9799-4e0f-42f9-996e-b9bacfa92fef" />
+
+# Problema A
+<img width="470" height="174" alt="711391777-3716bc21-05ae-4b9a-801e-61669fe8f8cd" src="https://github.com/user-attachments/assets/5bd8b5f4-0af4-422f-bf86-6c54169d0875" />
+
+#Controle de concorrencia MAXIMO_SIMULTANEO = 2 - foi alterado de numero 3 para 2
+
+# Replicação e Consistência
+# Problema B
+
+<img width="461" height="174" alt="711396266-c0b8f5f5-a085-4e5b-b970-c52f0efba4c3" src="https://github.com/user-attachments/assets/a015dc5f-aff6-4c50-b9a9-ade856caaac8" />
+
+ sincronizar(): réplica ["estoque"] = principal ["estoque"] - foi alterado de réplica para principal 
+ 
+# Tolerância a Falhas
+# Problema C
+
+<img width="477" height="163" alt="711398485-a2f6163b-21b2-455c-b88b-147005cde417" src="https://github.com/user-attachments/assets/a366a077-f291-42a0-86cc-ea4601b4a91a" />
+
+
+if réplica ["online"]: - foi alterado de principal para réplica
+
+
+principal caso ele apresente alguma falha.
